@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const BarraNavegacion = () => {
 // eslint-disable-next-line no-unused-vars
-const user = JSON.parse(localStorage.getItem('user'));
+//const user = JSON.parse(localStorage.getItem('user'));
   return (
     <Navbar bg="primary" expand="lg" variant='primary'>
         <Container>
@@ -34,7 +34,7 @@ const user = JSON.parse(localStorage.getItem('user'));
                 </NavDropdown>
             </Nav>
             <Nav>
-                <NavDropdown title={'Bienvenidos, ' + (user?.nombre || 'Usuario')} id="user-dropdown">
+                <NavDropdown title="Bienvenidos">
                     <NavDropdown.Item as={Link} to="/perfil">Perfil</NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/logout">Cerrar sesion</NavDropdown.Item>
                 </NavDropdown>
