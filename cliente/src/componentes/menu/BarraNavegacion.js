@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const BarraNavegacion = () => {
+// eslint-disable-next-line no-unused-vars
 const user = JSON.parse(localStorage.getItem('user'));
   return (
     <Navbar bg="primary" expand="lg" variant='primary'>
