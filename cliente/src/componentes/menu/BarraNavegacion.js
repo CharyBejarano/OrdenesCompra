@@ -33,7 +33,7 @@ const user = JSON.parse(localStorage.getItem('user'));
                 </NavDropdown>
             </Nav>
             <Nav>
-                <NavDropdown title={'Birnvrnidos, ${user ?.nombre}'} id="user-dropdown">
+                <NavDropdown title={`Bienvenidos, ${user?.nombre || 'Usuario'}`} id="user-dropdown">
                     <NavDropdown.Item as={Link} to="/perfil">Perfil</NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/logout">Cerrar sesion</NavDropdown.Item>
                 </NavDropdown>
